@@ -7,7 +7,8 @@ document.getElementById('login-form').addEventListener('submit', function(event)
     password = document.getElementById('password').value;
   
     if (username && password) {
-        alert('Welcome cabdi');
+        // alert('Welcome ');
+        window.location.href = 'index.html';
     } else {
       document.getElementById('error-message').textContent = 'Please enter both username and password.';
     }
