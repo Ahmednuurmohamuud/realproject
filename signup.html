@@ -1,0 +1,245 @@
+
+
+<style>
+    body {
+     background: url('https://static-communitytable.parade.com/wp-content/uploads/2014/03/rethink-target-heart-rate-number-ftr.jpg') fixed;
+    background-size: cover;
+}
+
+*[role="form"] {
+    max-width: 530px;
+    padding: 15px;
+    margin: 0 auto;
+    border-radius: 0.3em;
+    background-color: #f2f2f2;
+}
+
+*[role="form"] h2 { 
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #000000;
+    margin-top: 5%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+
+</style>
+
+
+
+
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+
+<div class="container">
+    <form class="form-horizontal" role="form" action="/submit_signup" method="post" id="registrationForm">
+        <h2>Create Account</h2>
+        <div class="form-group">
+            <label for="name" class="col-sm-3 control-label">Name</label>
+            <div class="col-sm-9">
+                <input type="text" id="firstName" placeholder=" Name" class="form-control" autofocus>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email" class="col-sm-3 control-label">Email*</label>
+            <div class="col-sm-9">
+                <input type="email" id="email" placeholder="Email" class="form-control" name="email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="phoneNumber" class="col-sm-3 control-label">Phone number</label>
+            <div class="col-sm-9">
+                <input type="number" id="phoneNumber" placeholder="Phone number must be 9 digits long" class="form-control" oninput="phone()">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="carrier" class="col-sm-3 control-label">Carrier</label>
+            <div class="col-sm-9">
+                <input type="text" id="carrier" placeholder="Carrier" class="form-control" readonly>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="birthDate" class="col-sm-3 control-label">Date of Birth*</label>
+            <div class="col-sm-9">
+                <input type="date" id="bdate" class="form-control"oninput="getAge()">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="age" class="col-sm-3 control-label">Age</label>
+            <div class="col-sm-9">
+                <input type="number" id="age" placeholder="Age" class="form-control" readonly >
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="Stage" class="col-sm-3 control-label">Select</label>
+            <div class="col-sm-9">
+                <select id="Stage" name="Stage">
+                    <option value="">Select your City</option>
+                    <option value="mogadishu">mogadishu</option>
+                    <option value="garoowe">garoowe</option>
+                    <option value="kismanyo">kismanyo</option>
+                    <option value="Hargaysa">Hargaysa</option>
+                    <option value="Jawhar">Jawhar</option>
+                    <option value="cadaado">cadaado</option>
+                    <option value="Baydhabo">Baydhabo</option>
+                    <option value="Lascaanood">Lascaanood</option>
+                </select>
+            </div>
+        </div>
+        <!-- Label for displaying selected stage -->
+        <div class="form-group">
+            <label class="col-sm-3 control-label">Your Stage Is</label>
+            <div class="col-sm-9">
+                <div class="S-result">
+                    <div class="result" id="flagimage">
+                        <img src="images/banadir.jpg" alt="Banaadir" class="flag" data-flag="mogadishuFlag">
+                        <img src="images/galmudug.jpg" alt="Gmudug.png" class="flag" data-flag="cadaadoFlag">
+                        <img src="images/hir.jpg" alt="Hirshabele" class="flag" data-flag="JawharFlag">
+                        <img src="images/jub.jpg" alt="Jubaland" class="flag" data-flag="kismanyoFlag">
+                        <img src="images/kgs.jpg" alt="Kgalbeed" class="flag" data-flag="BaydhaboFlag">
+                        <img src="images/khatuma.jpg" alt="Khatumo" class="flag" data-flag="LascaanoodFlag">
+                        <img src="images/pun.jpg" alt="Putland" class="flag" data-flag="garooweFlag">
+                        <img src="images/somland.jpg" alt="Somaliland" class="flag" data-flag="HargaysaFlag">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+      
+<!--         
+        <div class="form-group">
+            <label for="city" class="col-sm-3 control-label">City</label>
+            <div class="col-sm-9">
+                <input type="text" id="city" placeholder="City" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="state" class="col-sm-3 control-label">State</label>
+            <div class="col-sm-9">
+                <input type="text" id="state" placeholder="State" class="form-control">
+            </div>
+        </div> -->
+       
+        <div class="form-group">
+            <label for="grade" class="col-sm-3 control-label">Grade</label>
+            <div class="col-sm-9">
+                <input type="text" id="grade" placeholder="Grade" class="form-control" readonly>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="mrks" class="col-sm-3 control-label">marks</label>
+            <div class="col-sm-9">
+                <input type="text" id="marks" placeholder="marks" class="form-control" oninput="calculateGrade()">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="studentId" class="col-sm-3 control-label">Student ID</label>
+            <div class="col-sm-9">
+                <input type="number" id="studentId" placeholder="Student ID" class="form-control" oninput="student()">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="faculty" class="col-sm-3 control-label">Faculty</label>
+            <div class="col-sm-9">
+                <input type="text" id="faculty" placeholder="Faculty" class="form-control"readonly>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Register</button>
+    </form> <!-- /form -->
+</div> <!-- ./container -->
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+function phone() {
+    var phoneNumber = $("#phoneNumber").val();
+    var carrier = ""; 
+
+    // Clear the Carrier input field
+    $("#carrier").val(""); 
+
+    if (phoneNumber.length != 9) {
+        // console.log("Phone number must be 10 digits long");
+        $("#carrier").val("Error"); // Set Carrier to Error
+        return; 
+    } else if (phoneNumber.startsWith("61")) {
+        carrier = "Hormuud";
+        $("#carrier").css("background", "yellow");
+        console.log("Hormuud Phone Number");
+    } else if (phoneNumber.startsWith("62")) {
+        carrier = "Somtel";
+        $("#carrier").css("background", "red");
+        console.log("Somtel Phone Number");
+    }else if (phoneNumber.startsWith("68")) {
+        carrier = "somnet";
+        $("#carrier").css("background", "green");
+        console.log("somnet Phone Number");
+    } else {
+        console.log("Unknown Phone Number");
+        $("#carrier").css("background", "");
+        $("#carrier").val("Error"); 
+
+        return; 
+    }
+
+    // Update the Carrier input field value
+    $("#carrier").val(carrier);
+}
+
+$(document).ready(function() {
+    phone(); 
+    getAge();
+    student();
+});
+
+
+const FlagST = {
+        mogadishu: 'mogadishuFlag',
+        kismanyo: 'kismanyoFlag',
+        Hargaysa: 'HargaysaFlag',
+        Jawhar: 'JawharFlag',
+        cadaado: 'cadaadoFlag',
+        Baydhabo: 'BaydhaboFlag',
+        garoowe: 'garooweFlag',
+        Lascaanood: 'LascaanoodFlag'
+    };
+    
+    $(document).ready(function () {
+        $('#Stage').change(function () {
+            const selectedStage = $(this).val();
+            const flags = $('#flagimage .flag');
+            
+            flags.hide();
+    
+            const flag = FlagST[selectedStage];
+            const selectedFlag = $(`[data-flag="${flag}"]`); 
+    
+            if (selectedFlag.length) {
+                selectedFlag.show();
+            }
+        });
+       
+    });
+
+
+
+
+</script>
+
+<script src="signUp.js"></script>
+
+
