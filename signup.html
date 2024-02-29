@@ -115,7 +115,7 @@
 }
 
 body {
-     background: url('https://static-communitytable.parade.com/wp-content/uploads/2014/03/rethink-target-heart-rate-number-ftr.jpg') fixed;
+     /* background: url('https://static-communitytable.parade.com/wp-content/uploads/2014/03/rethink-target-heart-rate-number-ftr.jpg') fixed; */
     background-size: cover;
 }
 
@@ -137,6 +137,10 @@ body {
     text-transform: uppercase;
     letter-spacing: 4px;
 }
+.flagimage{
+    display: none;
+}
+ 
 
         
     </style>
@@ -214,7 +218,7 @@ body {
         <div class="form-group">
             <label for="birthDate" class="col-sm-3 control-label">Date of Birth*</label>
             <div class="col-sm-9">
-                <input type="date" id="bdate" class="form-control"oninput="getAge()">
+                <input type="text" id="bdate" class="form-control"oninput="getAge()">
             </div>
         </div>
         <div class="form-group">
