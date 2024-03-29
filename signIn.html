@@ -32,6 +32,16 @@
       <link rel="stylesheet" href="css/steyl.css">
 
     <style>
+
+
+body {
+      transition: background-color 0.3s ease;
+    }
+
+    .dark-mode {
+      background-color: black;
+      color: white;
+    }
         
 
         .main-navbar{
@@ -186,6 +196,7 @@ background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 
 
 <!-- Header -->
 <!-- Header -->
+<button id="toggleButton" onclick="toggleDarkMode()">Toggle Dark Mode</button>
 <div class="main-navbar shadow-sm sticky-top">
     <div class="top-navbar">
         <div class="container-fluid">
@@ -415,5 +426,22 @@ background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 
 
 
 <script src="signIn.js"></script>
+</body>
+</html>
+
+
+  </style>
+</head>
+<body>
+
+ 
+
+  <script>
+    function toggleDarkMode() {
+      var html = document.documentElement; // Select the <html> element
+      html.classList.toggle('dark-mode');
+    }
+  </script>
+
 </body>
 </html>
