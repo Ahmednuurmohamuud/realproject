@@ -1,0 +1,202 @@
+/* body{
+    background-color: #000;
+} */
+
+.main-navbar{
+    border-bottom: 1px solid #e1d9d9;
+}
+.main-navbar .top-navbar{
+    background-color: #000000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.main-navbar .top-navbar .brand-name{
+    color: #f5eaea;
+}
+.main-navbar .top-navbar .nav-link{
+    color: #ece6e6;
+    font-size: 16px;
+    font-weight: 500;
+}
+.main-navbar .top-navbar .dropdown-menu{
+    padding: 0px 0px;
+    border-radius: 0px;
+}
+.main-navbar .top-navbar .dropdown-menu .dropdown-item{
+    padding: 8px 16px;
+    border-bottom: 1px solid #f5e5e5;
+    font-size: 14px;
+}
+.main-navbar .top-navbar .dropdown-menu .dropdown-item i{
+    width: 20px;
+    text-align: center;
+    color: #2874f0;
+    font-size: 14px;
+}
+.main-navbar .navbar{
+    padding: 0px;
+    background-color: #f0f0f0;
+}
+.main-navbar .navbar .nav-item .nav-link{
+    padding: 8px 20px;
+    color: #000;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-navbar .top-navbar .nav-link{
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+}
+
+
+.carousel .item .img-box {
+	height: 120px;
+	margin-bottom: 20px;
+	width: 100%;
+	position: relative;
+}
+.carousel .item img {	
+	max-width: 100%;
+	max-height: 100%;
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+        /* Apply Lobster font to navbar-brand */
+        /* .navbar-brand {
+            font-family: 'Lobster', cursive;
+            font-size: 2rem;
+            color: #fff;
+        }
+
+        .navbar-nav .nav-link {
+            font-family: 'Pacifico', cursive;
+            color: #fff;
+            font-size: 1.1rem;
+            margin-right: 20px;
+        } */
+
+        /* Set the width and height of the carousel container */
+        #myCarousel {
+            width: 90%;
+            max-height: 300px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        /* Set the width and height of the carousel images */
+        #myCarousel img {
+            width: auto;
+            max-width: 100%;
+            height: auto;
+            max-height: none;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Style for product cards */
+        
+        .footer-area{
+    padding: 40px 0px;
+    background-color: #000000de;
+    color: #fffefe;
+}
+.footer-area a{
+    text-decoration: none;
+}
+.footer-area .footer-heading{
+    font-size: 24px;
+    color: #fffafa;
+}
+.footer-area .footer-underline{
+    height: 1px;
+    width: 70px;
+    background-color: #ffffff;
+    margin: 10px 0px;
+}
+.copyright-area{
+    padding: 14px 0px;
+    background-color: #262626;
+}
+.copyright-area p{
+    margin-bottom: 0px;
+    color: #faf6f6;
+}
+.copyright-area .social-media{
+    text-align: end;
+}
+.copyright-area .social-media a{
+    margin: 0px 10px;
+    color: #fff9f9;
+    width: 20px;
+}
+
+    /* Product Card */
+    .product-card{
+    background-color: #000000;
+    border: 1px solid #000000;
+    margin-bottom: 24px;
+}
+.product-card a{
+    text-decoration: none;
+}
+.product-card .stock{
+    position: absolute;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 2px 12px;
+    margin: 8px;
+    font-size: 12px;
+}
+.product-card .product-card-img{
+    max-height: 260px;
+    overflow: hidden;
+    border-bottom: 1px solid #fffafa;
+}
+.product-card .product-card-img img{
+    width: 100%;
+}
+.product-card .product-card-body{
+    padding: 10px 10px;
+}
+.product-card .product-card-body .product-brand{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 4px;
+    color: #ffffff;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.product-card .product-card-body .product-name{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff6f6;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.product-card .product-card-body .selling-price{
+    font-size: 22px;
+    color: #f9eeee;
+    font-weight: 600;
+    margin-right: 8px;
+}
+.product-card .product-card-body .original-price{
+    font-size: 18px;
+    color: #937979;
+    font-weight: 400;
+    text-decoration: line-through;
+}
+.product-card .product-card-body .btn1{
+    border: 1px solid;
+    margin-right: 3px;
+    border-radius: 0px;
+    font-size: 12px;
+    margin-top: 10px;
+}
