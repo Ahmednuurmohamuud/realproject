@@ -3,7 +3,7 @@ let style = document.getElementById("style");
 
 icon.onclick = function(){
   // style.href = ""
-  // style.href = "white.css"
+  style.href = "white.css"
   
 
   if(style.href.includes("dark.css")){
@@ -23,13 +23,31 @@ icon.onclick = function(){
   // }
  
 }
- 
-// style theme
-// let style = document.getElementById("style");
-
-// students record
 $(document).ready(function(){
   let marks; 
 });
+
+ 
+
+// let icon = document.getElementById("flexSwitchCheckDefault123");
+// let style = document.getElementById("style");
+
+// icon.onclick = function(){
+//   // style.href = ""
+//   // style.href = "white.css"
+  
+
+//   if(style.href.includes("dark.css")){
+//     style.href = "white.css"
+//     // icon.src = "icons/moonn-01-01.png"
+//   } else if (style.href.includes("white.css")) {
+//     style.href = "dark.css";
+//     // Optionally change icon source here
+//   }
+// };
+// $(document).ready(function(){
+//   let marks; 
+// });
+
 
 
