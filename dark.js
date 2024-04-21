@@ -1,4 +1,4 @@
-let icon = document.getElementById("flexSwitchCheckDefault123");
+let icon = document.getElementById("flexSwitchCheckDefault");
 let style = document.getElementById("style");
 
 icon.onclick = function(){
