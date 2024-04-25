@@ -35,11 +35,11 @@
 }
 .main-navbar .navbar{
     padding: 0px;
-    background-color: #f0f0f0;
+    background-color: #0a0909;
 }
 .main-navbar .navbar .nav-item .nav-link{
     padding: 8px 20px;
-    color: #000;
+    color: #fbf4f4;
     font-size: 15px;
 }
 
